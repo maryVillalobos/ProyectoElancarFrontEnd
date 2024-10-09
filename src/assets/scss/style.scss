@@ -1,0 +1,58 @@
+
+$theme-colors: (
+  "primary": #eab307 ,
+  "secondary": #fbbf23,
+  "success": #facc14,
+  "info": #fcd34d,
+  "warning": #fde046,
+  "danger": #7f7f7f,
+  "light": #595959,
+  "dark": #262626
+);
+
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  background-color: rgb(238, 238, 238); // Cambia el fondo a amarillo para ver si el archivo se está aplicando
+}
+
+
+
+
+
+color-blocks-container {
+  height: 100vh; // Contenedor que ocupa toda la altura de la pantalla
+  padding: 0; // Eliminar cualquier relleno adicional
+}
+
+.color-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; // Altura completa de la pantalla
+  color: white;
+  font-size: 2em;
+  transition: all 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 1.5em; // Tamaño de texto más pequeño en tablets
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2em; // Tamaño de texto más pequeño en móviles
+  }
+}
+
+// Definir colores para cada columna de acuerdo a las variables de Bootstrap
+.color-block-primary {
+  background-color: var(--bs-primary);
+}
+
+.color-block-secondary {
+  background-color: var(--bs-secondary);
+}
+
+.color-block-success {
+  background-color: var(--bs-success);
+}

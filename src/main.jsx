@@ -1,12 +1,44 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import App from './App'; // Importa el componente principal App
+import '@styles/style.scss';
 
-// Renderiza el componente App en el elemento root del HTML
+// Componentes 
+import Landing from './component/landingPage/Landing';
+import InicioSesion from './component/inicioSesion/InicioSesion'
+import Catalogo from './component/catalogo/catalogo'
+import Interfaz from './component/interfazUsuario/interfazUsuario'
+
+
+
+const router=createBrowserRouter([
+  {
+    path:"/",
+    element: <Landing />
+  },
+  {
+    path:"/InicioSesion",
+    element: <InicioSesion />
+  },
+  {
+    path:"/catalogo",
+    element:<Catalogo />
+  },
+  {
+    path:"/interfazUsuario",
+    element: <Interfaz />
+  },
+  
+]);
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );
