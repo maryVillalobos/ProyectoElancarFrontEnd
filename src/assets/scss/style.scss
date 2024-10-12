@@ -1,4 +1,3 @@
-
 $theme-colors: (
   "primary": #eab307 ,
   "secondary": #fbbf23,
@@ -13,23 +12,31 @@ $theme-colors: (
 @import 'bootstrap/scss/bootstrap';
 
 body {
-  background-color: rgb(238, 238, 238); // Cambia el fondo a amarillo para ver si el archivo se está aplicando
+  background-color: rgb(255, 150, 150); // Cambia el fondo a amarillo para ver si el archivo se está aplicando
 }
 
 //CSS del Landing page, pantallas iniciales
-landing-container {
-  height: 100vh; // Contenedor que ocupa toda la altura de la pantalla
-  padding: 0; // Eliminar cualquier relleno adicional
+.landing-container {
+  height: 90vh; /* Contenedor que ocupa toda la altura de la pantalla */
+  padding: 0; /* Eliminar cualquier relleno adicional */
 }
 
 .col-landing {
   display: flex;
-  height: 100vh; // Altura completa de la pantalla
-  color: white;
-  font-size: 2em;
-  transition: all 0.5s ease-in-out;
+  height: 100vh; /* Altura completa de la pantalla */
+  padding: 0;
 }
 
+.carousel-container {
+  width: 100vw; /* Ocupar todo el ancho de la ventana */
+  height: 80vh; /* Ajustar la altura del carrusel */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Las imágenes cubrirán todo el espacio del carrusel sin perder proporciones */
+}
 
 
 

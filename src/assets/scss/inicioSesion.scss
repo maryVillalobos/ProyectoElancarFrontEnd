@@ -1,0 +1,40 @@
+$theme-colors: (
+  "primary": #eab307 ,
+  "secondary": #fbbf23,
+  "success": #facc14,
+  "info": #fcd34d,
+  "warning": #fde046,
+  "danger": #7f7f7f,
+  "light": #595959,
+  "dark": #262626
+);
+
+@import 'bootstrap/scss/bootstrap';
+
+
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 2rem;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 35rem;
+    height: 100%;
+}
+
+.login-box {
+padding: 20px;
+background-color: #fff; 
+border-radius: 10px;
+}
+
+.input-group-container {
+margin-bottom: 20px;
+}
+
+.login-image {
+background-image: url('/path-to-your-image.jpg'); 
+background-size: cover;
+background-position: center;
+height: 100%;
+}

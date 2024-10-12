@@ -9,12 +9,12 @@ const Catalogo = () => {
   return (
     <>
       <NavBar/>
-      <Sidebar/>
-      <Card/>
-
-        <Container className="text-center" style={{ paddingTop: '20px' ,color:'red'}}>
-        <h1>Hola, funcionó Catálogo</h1>
-        </Container>
+      <div className='col-4'><Sidebar/></div>
+      
+      <div className='col-4'>
+        <p>"hola"</p>
+      
+      </div>
     </>
   );
 };

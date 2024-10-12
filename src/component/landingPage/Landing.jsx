@@ -1,4 +1,3 @@
-// Landing.jsx
 import React, { useState } from 'react';
 import { Container, Row, Col, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
 import '@styles/style.scss';
@@ -6,8 +5,7 @@ import NavBar from './components/navbar';
 
 const Landing = () => {
 
-
-  {/*Carrusel */}
+  {/* Carrusel */}  
   const items = [
     {
       src: 'https://picsum.photos/id/123/1200/400',
@@ -67,38 +65,27 @@ const Landing = () => {
 
   return (
     <>
-      <NavBar />
-      <Container fluid className="landing-container">
-        {/* Fila 1 carrusel*/}
-        <Row className="h-100">
-         
-          <Col className="col-landing color-block-primary" xs="12" md="12">
-            <Carousel activeIndex={activeIndex} next={next} previous={previous} className="w-100">
-              <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-              {slides}
-              <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-              <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-            </Carousel>
-          </Col>
-
-        </Row>
-
-        {/* Fila 2*/}
-        <Row className="h-100">
-          <Col className="col-landing color-block-secondary" xs="12" md="12">
-            <h2>Secondary Block</h2>
-          </Col>
-        </Row>
-
-        {/* Fila 3*/}
-        <Row className="h-100">
-          <Col className="col-landing color-block-success" xs="12" md="12">
-            <h2>Success Block</h2>
-          </Col>
-        </Row>
-      </Container>
+        <NavBar />
+    <Container fluid className="color-blocks-container">
+          {/* Fila que contiene los bloques de colores */}
+          <Row className="h-100">
+            {/* Columna 1 */}
+            <Col className="color-block color-block-primary" xs="12" md="12">
+              <h2>Primary Block</h2>
+            </Col>
+    
+            {/* Columna 2 */}
+            <Col className="color-block color-block-secondary" xs="12" md="12">
+              <h2>Secondary Block</h2>
+            </Col>
+    
+            {/* Columna 3 */}
+            <Col className="color-block color-block-success" xs="12" md="12">
+              <h2>Success Block</h2>
+            </Col>
+          </Row>
+        </Container>
     </>
-  );
-};
-
-export default Landing;
+      );
+    };
+    export default Landing;
