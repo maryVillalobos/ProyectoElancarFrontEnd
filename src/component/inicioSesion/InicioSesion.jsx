@@ -1,12 +1,11 @@
 import React from 'react';
 import { Container, InputGroup, Input, InputGroupText, Button, NavLink } from 'reactstrap';
-import NavBar from '../landingPage/components/navbar';
-
 import '/src/assets/scss/inicioSesion.scss'; 
+import MyNavbar from '../landingPage/components/MyNavbar';
 const InicioSesion = () => {
   return (
     <>
-      <NavBar />
+      <MyNavbar />
       <div>
         <Container className="login-container">
           <div className="login-box">
