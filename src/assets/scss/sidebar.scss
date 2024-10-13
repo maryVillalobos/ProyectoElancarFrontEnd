@@ -1,0 +1,20 @@
+@import './style.scss';
+
+
+.sidebar{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* Adjust based on how far down you want it to stick */
+    left: 0; /* Sticks it to the left side */
+    height: 100vh; /* Makes sure it takes the full viewport height */
+    background-color: var(--bs-success); /* Optional: To ensure the background color is visible */
+    padding: 20px; /* Optional: Add some padding for styling */
+    z-index: 1000; /* Ensures it's on top of the content */
+    overflow-y: auto; /* If the menu gets too long, allows it to scroll */
+  }
+
+  .titulo-catalogo{
+    font-size: xx-large;
+    border-bottom: 0.2rem solid;
+    border-color: var(--bs-danger);
+  }

@@ -9,20 +9,23 @@ import {
 
 
 
-const SidebarElement = ({Categoria, Subcategorias}) => {
+const SidebarElement = ({id, Categoria, Subcategorias =[]}) => {
  
     
   
   return (
     <>
     <AccordionItem>
-          <AccordionHeader targetId="1">{Categoria}</AccordionHeader>
-          <AccordionBody accordionId="1">
-            <strong>This is the first item&#39;s accordion body.</strong>
-            You can modify any of this with custom CSS or overriding our default
-            variables. It&#39;s also worth noting that just about any HTML can
-            go within the <code>.accordion-body</code>, though the transition
-            does limit overflow.
+          <AccordionHeader targetId={id}>{Categoria}</AccordionHeader>
+          
+          <AccordionBody accordionId={id}>
+            
+          {Subcategorias.map((subcategoria, index) => (
+            <div className='col-4' key={index}>
+              {subcategoria}
+            </div>
+          ))}
+            
           </AccordionBody>
         </AccordionItem>
     </>
