@@ -8,8 +8,8 @@ const MyNavbar = () => {
   const toggle = () => setIsOpen(!isOpen); // Alternar entre abierto y cerrado
 
   return (
-    <Navbar color="primary" dark expand="md" className="mb-4">
-      <NavbarBrand href="/">Mi Aplicación</NavbarBrand>
+    <Navbar color="primary" dark expand="md" className="mb-4 ">
+      <NavbarBrand color='secondary' href="/">Mi Aplicación</NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>

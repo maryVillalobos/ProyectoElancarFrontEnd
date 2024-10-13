@@ -18,8 +18,14 @@ const Sidebar = () => {
   return (
     <>
     <Accordion open={open} toggle={toggle}>
-      <SidebarElement Categoria={"Herramientas"}
-      Subcategorias={"Hogar"}/>
+      <SidebarElement id= {1}Categoria={"Herramientas"}
+      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
+      <SidebarElement id={2} Categoria={"Cerámicas"}
+      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
+      <SidebarElement id={3} Categoria={"Cerámicas"}
+      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
+      <SidebarElement id={4} Categoria={"Cerámicas"}
+      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
 
 
     

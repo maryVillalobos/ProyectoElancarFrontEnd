@@ -13,6 +13,7 @@ import Landing from './component/landingPage/Landing';
 import InicioSesion from './component/inicioSesion/InicioSesion'
 import Catalogo from './component/catalogo/catalogo'
 import Interfaz from './component/interfazUsuario/interfazUsuario'
+import Informacion from './component/informacionEmpresa/informacion';
 
 
 
@@ -32,6 +33,10 @@ const router=createBrowserRouter([
   {
     path:"/interfazUsuario",
     element: <Interfaz />
+  },
+  {
+    path:"/about",
+    element: <Informacion />
   },
   
 ]);

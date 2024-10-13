@@ -1,0 +1,12 @@
+@import './style.scss';
+
+.titulo-empresa{
+    color: var(--bs-info);
+    background-color: var(--bs-dark);
+    padding-left: 10%;
+}
+
+.container-info{
+    color: var(--bs-dark);
+    background-color: var(--bs-success);
+}
