@@ -2,10 +2,11 @@ import React from 'react';
 import { Container, Card, CardHeader, CardBody, CardTitle, CardText, CardFooter, Button } from 'reactstrap'; // Importa Container de Reactstrap para estructurar el layout
 
 
-const Productos = ({Titulo, Descripcion}) => {
+const Productos = ({ Titulo, Descripcion }) => {
     return (
         <>
-            <Card className="my-2" style={{ width: '18rem'}}>
+        <div className="col-md-6 col-sd-12">
+            <Card className="my-2" >
                 <CardHeader>
                     Comparar
                 </CardHeader>
@@ -24,6 +25,7 @@ const Productos = ({Titulo, Descripcion}) => {
                     Footer
                 </CardFooter>
             </Card>
+            </div>
         </>
     );
 };

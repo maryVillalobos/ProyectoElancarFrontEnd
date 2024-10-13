@@ -1,31 +1,23 @@
 import React from 'react';
-import { Container } from 'reactstrap'; // Importa Container de Reactstrap para estructurar el layout
+import { Container, Row } from 'reactstrap'; // Importa Container de Reactstrap para estructurar el layout
 import NavBar from '../landingPage/components/navbar';
-import Producto from './components/Productos/ProductosElement';
+import ProductosContainer from './components/Productos/ProductosContainer';
 import Sidebar from './components/Sidebar/sidebar';
-
 
 const Catalogo = () => {
   return (
     <>
       <NavBar/>
-      <div className="row">
-          <div className='col-4'><Sidebar/></div>
-          
-          <div className='col-3'>
-            <Producto Titulo={"Taladro"} Descripcion={"Herramienta"}/>
-    
-          </div>
-          <div className='col-3'>
-            <Producto Titulo={"Taladro"} Descripcion={"Herramienta"}/>
-    
-          </div>
-          <div className='col-3'>
-            <Producto Titulo={"Taladro"} Descripcion={"Herramienta"}/>
-    
-          </div>
+      <Row>
+         <Sidebar/>
 
-      </div>
+         <ProductosContainer/>
+
+      </Row>
+          
+          
+    
+
       
     </>
   );
