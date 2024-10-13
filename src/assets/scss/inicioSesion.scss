@@ -1,29 +1,148 @@
 @import './style.scss';
+$theme-colors: (
+  "FONDO": #fbbe23a1 
+);
+@import 'bootstrap/scss/bootstrap';
+
 
 
 
 .login-container {
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 2rem;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    width: 35rem;
-    height: 100%;
-}
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;       
+  height: 100vh;             
+  background-image: url('../img/imgInicioSecion.jpg');
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat; 
 
-.login-box {
-padding: 20px;
-background-color: #fff; 
-border-radius: 10px;
+  .login-box {
+    width: 45%;               
+    height: 100%;              
+    padding: 2rem;          
+    box-shadow: none; 
+    align-items: center;        
+    background-color: var(--bs-FONDO) ; 
+    display: flex;  
+    flex-direction: column; 
+    
+  }
 }
 
 .input-group-container {
-margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;       
+    justify-content: flex-start;   
+    text-align: left;             
+    width: 35rem;
+}
+.forgot-password {
+    text-align: left;      
+    width: 100%;          
+    margin-top: 1rem;    
+  }
+
+.titulo {
+    text-align: center;
 }
 
-.login-image {
-background-image: url('/path-to-your-image.jpg'); 
-background-size: cover;
-background-position: center;
-height: 100%;
+.boton-inicio{
+    border-radius: 100px; 
+    width: 15rem;                 
+    font-size: 1rem;             
+    color: white;
+    transition: background-color 0.3s ease; 
 }
+
+
+
+
+
+@media (max-width: 1224px) {
+    .login-box {
+      width: 90%;                   // Aumentar el ancho en pantallas medianas
+    }
+  
+    .input-group-container {
+      max-width: 340px;             // Ajustar el ancho máximo de los inputs en pantallas medianas
+    }
+  }
+  
+@media (max-width: 768px) {
+    .login-container {
+      justify-content: center;      // Centrar el formulario en pantallas pequeñas (tablets y móviles)
+    }
+    .login-box {
+        width: 100%;                   // El formulario ocupa el 80% de la pantalla en pantallas más pequeñas
+        padding: 1.5rem;
+    }
+    .input-group-container {
+        max-width: 280px;             // Ajustar el ancho máximo de los inputs en pantallas pequeñas
+    }
+    .boton-inicio {
+        width: 100%;                  // El botón ocupa todo el ancho del formulario
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        justify-content: center;      // Mantener centrado el formulario en móviles pequeños
+    }
+  
+    .login-box {
+        width: 100%;                   // En móviles, el formulario ocupa el 90% del ancho de la pantalla
+        padding: 1rem;
+    }
+  
+    .input-group-container {
+        width: 100%;                  // Inputs ocupan todo el ancho del formulario
+        max-width: 280px;
+    }
+  
+    .boton-inicio {
+        width: 100%;                  // Botón ocupa todo el ancho en móviles
+    }
+}
+
+
+
+
+
+
+
+
+
+
+footer.footer {
+    background-color: #2b2b2b; /* Color de fondo negro o gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between; /* Alinea las secciones */
+    flex-wrap: wrap; /* Adaptable a pantallas pequeñas */
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Ancho mínimo para que no se deforme */
+  }
+  
+  .footer-section img {
+    max-width: 100%;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
