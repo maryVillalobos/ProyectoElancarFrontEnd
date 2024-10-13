@@ -1,21 +1,21 @@
 
 
 footer.footer {
-    background-color: #2b2b2b; /* Color de fondo negro o gris oscuro */
-    color: #fff; /* Texto blanco */
+    background-color: #2b2b2b; 
+    color: #fff; 
     padding: 20px;
   }
   
   .footer-container {
     display: flex;
-    justify-content: space-between; /* Alinea las secciones */
-    flex-wrap: wrap; /* Adaptable a pantallas pequeñas */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
   }
   
   .footer-section {
     flex: 1;
     margin: 10px;
-    min-width: 200px; /* Ancho mínimo para que no se deforme */
+    min-width: 200px; 
   }
   
   .footer-section img {
