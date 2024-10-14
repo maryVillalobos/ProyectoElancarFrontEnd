@@ -23,7 +23,7 @@ const Sidebar = () => {
       setOpen(id);}}
   return (
     <>
-    <Accordion open={open} toggle={toggle} className='col-4 sidebar'>
+    <Accordion open={open} toggle={toggle} className='col-3 sidebar'>
       <SidebarElement id= {1}Categoria={"Herramientas"}
       Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
       <SidebarElement id={2} Categoria={"Cerámicas"}
@@ -46,8 +46,6 @@ const Sidebar = () => {
       Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
       <SidebarElement id={11} Categoria={"Cerámicas"}
       Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-
-
     
     </Accordion>
 
