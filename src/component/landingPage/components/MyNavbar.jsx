@@ -5,16 +5,16 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import logo from '@img/logonavbar.png'
 
 const MyNavbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false); 
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar className="custom-navbar fixed-top" expand="md"> 
+    <Navbar className="custom-navbar fixed-top" expand="md">
       <NavbarBrand href="/">
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img
-            src={logo}  // Aquí usas la ruta a la imagen dentro de public
+            src={logo}
             alt="Logo de Elancar"
             style={{ width: '65px', height: '80px', marginRight: '10px' }}
           />

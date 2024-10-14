@@ -1,6 +1,6 @@
 // src/components/MyNavbar.jsx
 import React from 'react';
-import '../../../assets/scss/footer.scss'; 
+import '@styles/footer.scss';
 
 const Footer = () => {
   

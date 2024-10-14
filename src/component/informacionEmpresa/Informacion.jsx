@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row, Button } from 'reactstrap'; // Importa Container de Reactstrap para estructurar el layout
-import NavBar from '../landingPage/components/navbar';
-import '/src/assets/scss/informacion.scss'; 
+import MyNavbar from '../landingPage/components/MyNavbar';
+import '@styles/informacion.scss';  // Importación del SCSS
 
 
 const Informacion = () => {
   return (
     <>
-          <NavBar />
+          <MyNavbar />
           <Row>
               <Container fluid className="color-blocks-container titulo-empresa">
                   <h1>Empresa</h1>
