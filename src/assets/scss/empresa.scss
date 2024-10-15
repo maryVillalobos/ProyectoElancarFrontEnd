@@ -1,0 +1,47 @@
+@import './style.scss';
+
+.titulo-empresa {
+    color: var(--bs-info);
+    background-color: var(--bs-dark);
+    padding-left: 10%;
+    padding-top: 0.5%;   // Ajusta la altura superior
+    padding-bottom: 0.5%;  // Ajusta la altura inferior
+    width: 100%;  // Mantiene el ancho del contenedor al 100%
+    max-width: 100vw; // Asegura que ocupe todo el ancho de la ventana
+    margin: 0 auto;
+  }
+  
+
+.container-info {
+  color: var(--bs-dark);
+  background-color: var(--bs-success);
+  padding-bottom: 1%;
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.informacion-button {
+  width: 90%;
+  padding: 10px;
+  background-color: var(--bs-warning);  // Color de fondo inicial
+  border: 2px solid rgba(38, 38, 38, 0.8);  // Borde negro con opacidad del 80%
+  color: white;  // Letras blancas
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Sombra leve
+  border-radius: 5px;  // Bordes redondeados
+  transition: all 0.3s ease;  // Transición suave para hover y active
+  font-weight: bold;
+  
+  &:hover {
+    background-color: var(--bs-primary);  // Cambiar color a primary al hacer hover
+    color: white;  // Mantener letras blancas en hover
+  }
+
+  &:active {
+    background-color: var(--bs-primary);  // Mantener color primary al hacer clic
+    color: black;  // Cambiar el color de las letras a negro cuando se haga clic
+    border-color: var(--bs-dark);  // Mantener el borde negro
+  }
+}
+
+

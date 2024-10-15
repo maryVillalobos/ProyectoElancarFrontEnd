@@ -13,33 +13,33 @@ import Landing from './component/landingPage/Landing';
 import InicioSesion from './component/inicioSesion/InicioSesion'
 import Catalogo from './component/catalogo/catalogo'
 import Interfaz from './component/interfazUsuario/interfazUsuario'
-import Informacion from './component/informacionEmpresa/informacion';
+import Empresa from './component/informacionEmpresa/Empresa';
 
 
 
-const router=createBrowserRouter([
+const router = createBrowserRouter([
   {
-    path:"/",
+    path: "/",
     element: <Landing />
   },
   {
-    path:"/InicioSesion",
+    path: "/InicioSesion",
     element: <InicioSesion />
   },
   {
-    path:"/catalogo",
-    element:<Catalogo />
+    path: "/catalogo",
+    element: <Catalogo />
   },
   {
-    path:"/interfazUsuario",
+    path: "/interfazUsuario",
     element: <Interfaz />
   },
   {
-    path:"/about",
-    element: <Informacion />
-  },
-  
+    path: "/empresa/:module?",  // El parámetro 'module' es opcional
+    element: <Empresa />
+  }
 ]);
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

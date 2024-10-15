@@ -1,35 +1,79 @@
+$theme-colors: (
+  "primary": #eab307,
+  "secondary": #fbbf23,
+  "success": #facc1493,
+  "info": #fffdf7,
+  "warning": #3e2a00,
+  "danger": #7f7f7f,
+  "light": #595959,
+  "dark": #262626
+);
+
+@import 'bootstrap/scss/bootstrap';
+
+$primary: #eab307; // Asegúrate de definir el color directamente
 
 footer.footer {
-  background-color: #2b2b2b; 
-  color: #fff; 
+  background-color: #2b2b2b;
+  color: #fff;
   padding: 20px;
-  width: 100%; // Asegura que el footer ocupe el 100% del ancho
-  position: relative; 
-  bottom: 0; // Alinea el footer al final
-  left: 0; 
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between; 
-  flex-wrap: wrap; 
+  justify-content: center; // Centrará las secciones horizontalmente
+  align-items: center;     // Alineará verticalmente en el centro si es necesario
+  flex-wrap: wrap;
+  text-align: left;      // Asegura que el texto esté centrado en cada sección
 }
 
 .footer-section {
-  flex: 1;
   margin: 10px;
-  min-width: 200px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Esto centra el contenido de cada sección
 }
 
-.footer-section img {
-  max-width: 100%;
-}
-
-h3 {
+h4 {
   margin-bottom: 10px;
   font-size: 18px;
+  color: $primary !important; // Asegura que el color se aplique correctamente
 }
 
-p {
-  margin: 5px 0;
+hr {
+  border: 1px solid #fff;
+  width: 100%; // Asegura que el separador ocupe todo el ancho del contenido
+}
+
+// Cambiar el color y el fondo de las listas
+.no-background {
+  background-color: transparent !important; // Fondo transparente
+  color: white !important; // Texto blanco
+  border: none !important; // Sin bordes
+  padding: 5px 0 !important; // Ajustar el padding
+}
+
+// Ajustar las listas del footer
+footer.footer .list-group-item {
+  background-color: transparent !important; // Fondo transparente
+  border: none !important; // Sin bordes
+  color: #fff !important; // Texto blanco
+}
+
+// Estilo para la descripción del mapa
+.map-description {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+// Ajustar el mapa
+.footer-section.mapa iframe {
+  margin-right: 0;
+  width: 100%; // Asegura que el mapa ocupe todo el ancho disponible
+  height: 300px; // Aumenta el tamaño del mapa según tus necesidades
 }
