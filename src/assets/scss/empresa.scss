@@ -12,36 +12,108 @@
   }
   
 
+/* Asegúrate de que este bloque amarillo ocupe todo el ancho de la ventana */
+.container-button {
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  background-color: #facc1493; /* Color sólido sin transparencia */
+  padding: 20px 0; /* Añade espacio arriba y abajo para los botones */
+  margin-left: calc(-50vw + 50%); /* Centra y elimina márgenes laterales */
+  opacity: 90%;
+}
+
+
 .container-info {
   color: var(--bs-dark);
-  background-color: var(--bs-success);
-  padding-bottom: 1%;
-  padding-top: 1%;
   display: flex;
   justify-content: center;
+  margin-bottom: 0px; // Sin margen inferior por defecto
 }
 
 .informacion-button {
   width: 90%;
   padding: 10px;
-  background-color: var(--bs-warning);  // Color de fondo inicial
-  border: 2px solid rgba(38, 38, 38, 0.8);  // Borde negro con opacidad del 80%
-  color: white;  // Letras blancas
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Sombra leve
-  border-radius: 5px;  // Bordes redondeados
-  transition: all 0.3s ease;  // Transición suave para hover y active
+  background-color: var(--bs-warning);
+  border: 2px solid rgba(38, 38, 38, 0.8); 
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s ease;
   font-weight: bold;
   
   &:hover {
-    background-color: var(--bs-primary);  // Cambiar color a primary al hacer hover
-    color: white;  // Mantener letras blancas en hover
+    background-color: var(--bs-primary);
+    color: white;
   }
 
   &:active {
-    background-color: var(--bs-primary);  // Mantener color primary al hacer clic
-    color: black;  // Cambiar el color de las letras a negro cuando se haga clic
-    border-color: var(--bs-dark);  // Mantener el borde negro
+    background-color: var(--bs-primary);
+    color: black;
+    border-color: var(--bs-dark);
+  }
+}
+
+// Media query para pantallas pequeñas
+@media (max-width: 768px) {
+  .container-info {
+    margin-bottom: 20px; // Aumenta el margen inferior entre botones en móviles
   }
 }
 
 
+
+
+
+// Informacion
+.informacion-modulo {
+  padding: 20px;
+
+  h2 {
+    font-weight: bold; 
+    color: #bd970093; 
+    margin-bottom: 20px;
+    padding: 10px;  
+  }
+
+  p {
+    margin-bottom: 20px;
+    text-align: justify;    
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease; /* Transición para hover */
+    
+    &:hover {
+      transform: scale(1.05); /* Efecto de zoom al hacer hover */
+    }
+  }
+
+  hr {
+    border-top: 4px solid #666666;  
+    margin: 40px 0;   
+  }
+
+  .section-row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+//Preguntas Frecuentes.
+
+.preguntas-frecuentes {
+  margin-top: 40px;  // Margen superior para separar del contenido superior
+  margin-bottom: 80px;  // Aumenta el margen inferior para separar más del footer
+}
+
+.container-preguntas {
+  margin-top: 40px; // Aumenté el margen superior para más espacio
+  margin-bottom: 40px; // Margen inferior para evitar que quede tan pegado
+}
+
+.accordion-item-custom {
+  margin-bottom: 20px; // Añadir un margen inferior adicional entre cada acordeón
+}

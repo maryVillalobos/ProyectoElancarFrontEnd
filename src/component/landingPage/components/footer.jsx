@@ -14,7 +14,7 @@ const Footer = () => {
               <h4>Empresa</h4>
               <hr />
               <ListGroup className="custom-list">
-                <ListGroupItem className="no-background">Lorem Ipsum es simplemente el texto de relleno.</ListGroupItem>
+                <ListGroupItem className="no-background">Con más de 35 años en el mercado, Elancar Ltda. es un referente en la venta de materiales de construcción en Calama. Desde 1987, hemos crecido, expandiendo nuestras operaciones y ofreciendo soluciones confiables a clientes y empresas, con un fuerte compromiso con la calidad.</ListGroupItem>
               </ListGroup>
             </div>
           </Col>

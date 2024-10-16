@@ -73,8 +73,8 @@ const Empresa = () => {
         </Row>
       </Container>
       <Container fluid className="p-0">
-        <Footer />
-      </Container>
+      <Footer />
+    </Container>
     </>
   );
 };
