@@ -117,3 +117,20 @@
 .accordion-item-custom {
   margin-bottom: 20px; // Añadir un margen inferior adicional entre cada acordeón
 }
+
+
+/* Estilos del mapa */
+.iframe-mapa {
+  border: 3px solid #eab307;  /* Color y tamaño del borde */
+  border-radius: 10px;  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
+  margin-top: 20px; /* Espacio arriba del mapa */
+}
+
+
+.button-formulario{
+    background-color: transparent;
+    color: #eab307;
+    font-weight: bold;
+    border: 3px solid #eab307;
+}

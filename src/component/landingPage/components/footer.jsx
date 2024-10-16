@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from 'react';
 import { ListGroup, ListGroupItem, Row, Col } from 'reactstrap';
 import '@styles/footer.scss';
@@ -16,6 +15,11 @@ const Footer = () => {
               <ListGroup className="custom-list">
                 <ListGroupItem className="no-background">Con más de 35 años en el mercado, Elancar Ltda. es un referente en la venta de materiales de construcción en Calama. Desde 1987, hemos crecido, expandiendo nuestras operaciones y ofreciendo soluciones confiables a clientes y empresas, con un fuerte compromiso con la calidad.</ListGroupItem>
               </ListGroup>
+            </div>
+
+            {/* Firma en la parte inferior */}
+            <div className="footer-firma">
+              <p>© 2024 Diseño web Elancar</p>
             </div>
           </Col>
 
@@ -55,7 +59,7 @@ const Footer = () => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                width="100%"  
+                width="100%"
                 height="250px"
               ></iframe>
             </div>

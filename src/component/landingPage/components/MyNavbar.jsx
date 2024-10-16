@@ -38,7 +38,7 @@ const MyNavbar = () => {
             <NavLink tag={Link} to="/empresa/Preguntas" className="font-weight-bold">Preguntas Frecuentes</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to="/empresa/Tiendas" className="font-weight-bold">Tiendas</NavLink>
+            <NavLink tag={Link} to="/empresa/Contacto" className="font-weight-bold">Contacto</NavLink>
           </NavItem>
         </Nav>
         <Button

@@ -31,7 +31,7 @@ const Empresa = () => {
         return <Informacion />;
       case 'Preguntas':
         return <Preguntas />;
-      case 'Contactos':
+      case 'Contacto':
         return <Contacto />;
       case 'Tiendas':
         return <Tiendas />;
@@ -55,10 +55,7 @@ const Empresa = () => {
           <Button className="informacion-button" onClick={() => setActiveModule('Preguntas')}>Preguntas Frecuentes</Button>
         </Col>
         <Col xs="12" md="3" className="container-info">
-          <Button className="informacion-button" onClick={() => setActiveModule('Contactos')}>Contactos</Button>
-        </Col>
-        <Col xs="12" md="3" className="container-info">
-          <Button className="informacion-button" onClick={() => setActiveModule('Tiendas')}>Tiendas</Button>
+          <Button className="informacion-button" onClick={() => setActiveModule('Contacto')}>Contacto</Button>
         </Col>
       </Row>
 
