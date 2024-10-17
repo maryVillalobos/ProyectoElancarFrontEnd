@@ -11,20 +11,20 @@ const items = [
   {
     src: img1,  // Usa la variable importada directamente
     altText: 'img',
-    caption: 'Union Ferretera Elancar',
-    description: 'Proveer de soluciones en el ámbito del mercado constructivo, a través de la venta de materiales para construcción, artículos de ferretería y servicios relacionados, que permitan satisfacer en forma eficiente, segura y oportuna las necesidades de nuestros clientes, principalmente concentrados en la provincia el Loa. Capital Calama.',
+    caption: 'Venta de Ferretería',
+    description: 'Encuentra en nuestra ferretería todo lo necesario para tus proyectos: herramientas, equipos y accesorios de las mejores marcas, con asesoría especializada para cada cliente.',
   },
   {
     src: img2,
     altText: 'img',
-    caption: 'Slide 2',
-    description: 'Descripción para el segundo slide',
+    caption: 'Venta de Materiales de Construcción',
+    description: 'Proveemos materiales de construcción de alta calidad para todo tipo de obras. Desde cemento hasta acabados, todo lo que necesitas para construir con confianza.',
   },
   {
     src: img3,
     altText: 'img',
-    caption: 'Slide 3',
-    description: 'Descripción para el tercer slide',
+    caption: 'Servicios de Construcción',
+    description: 'Ofrecemos una amplia gama de servicios de construcción, diseñados para garantizar estructuras sólidas y duraderas. Calidad y seguridad son nuestra prioridad en cada proyecto.',
   },
 ];
 

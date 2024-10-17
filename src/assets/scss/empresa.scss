@@ -134,3 +134,51 @@
     font-weight: bold;
     border: 3px solid #eab307;
 }
+
+
+//Servicios
+
+.servicios-modulo {
+  padding: 20px;
+
+  .nav-tabs {
+    border-bottom: 2px solid #eab307; // Borde debajo de las pestañas
+  }
+
+  .nav-item {
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    color: #000;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #eab307;
+    border-radius: 0;
+    padding: 10px 20px;
+
+    &.active {
+      background-color: #eab307;
+      color: #fff;
+      border: 1px solid #eab307;
+    }
+  }
+
+  .tab-content {
+    border: 1px solid #eab307;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Añade sombra
+  }
+
+  h4 {
+    color: #eab307;
+  }
+
+  p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

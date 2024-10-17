@@ -157,6 +157,8 @@ body {
   z-index: 2; // Overlay encima de la imagen pero debajo del texto
 }
 
+
+
 .custom-caption {
   position: absolute;
   top: 50%;
@@ -179,7 +181,7 @@ body {
   p {
     font-size: 1.2rem;
     margin-top: 1rem;
-    text-align: justify; // Justifica el texto para alinearlo de forma elegante
+    text-align: center; // Justifica el texto para alinearlo de forma elegante
   }
 }
 
@@ -187,11 +189,12 @@ body {
 @media (max-width: 768px) {
   .custom-caption h1 {
     font-size: 2rem; // Cambia el tamaño de la fuente del título para pantallas más pequeñas
-    max-width: 90%;  // Limita el ancho máximo de la descripción para que no ocupe toda la pantalla
+    max-width: 150%;  // Limita el ancho máximo de la descripción para que no ocupe toda la pantalla
   }
 
   .custom-caption p {
-    font-size: 0.9rem; // Reduce el tamaño de la descripción para pantallas más pequeñas
+    font-size: 0.9rem; 
+    
   }
 }
 

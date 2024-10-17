@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import '@styles/empresa.scss'; // Asumiendo que tienes un archivo SCSS para el estilo
+import Servicios from '../components/servicios'
+
 
 const Contacto = () => {
   // Estado para controlar los valores del formulario
@@ -90,10 +92,10 @@ const Contacto = () => {
       <Row className="section-row my-4">
         <Col xs="12" md="12" className="text-left">
           <h2>Representantes Comerciales</h2>
-          <p>“Proveer de soluciones en el ámbito del mercado constructivo, a través de la venta de materiales para construcción, artículos de ferretería y servicios relacionados, que permitan satisfacer en forma eficiente, segura y oportuna las necesidades de nuestros clientes, principalmente concentrados en la provincia del Loa. Capital Calama.”</p>
+          <Servicios />
         </Col>
       </Row>
-      <hr />
+      
     </Container>
   );
 };

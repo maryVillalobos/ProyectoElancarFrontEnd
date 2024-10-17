@@ -8,7 +8,6 @@ import '@styles/empresa.scss';
 import Informacion from './components/informacion';
 import Preguntas from './components/preguntas';
 import Contacto from './components/contacto';
-import Tiendas from './components/tiendas';
 
 const Empresa = () => {
   // Obtener el parámetro "module" de la URL
@@ -33,8 +32,6 @@ const Empresa = () => {
         return <Preguntas />;
       case 'Contacto':
         return <Contacto />;
-      case 'Tiendas':
-        return <Tiendas />;
       default:
         return <Informacion />;
     }
