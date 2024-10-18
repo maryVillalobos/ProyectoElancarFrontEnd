@@ -11,8 +11,8 @@ const Servicios = () => {
   };
 
   return (
-    <Container className="servicios-modulo">
-      <Row className="my-4">
+    
+      <Row className="servicios-modulo">
         {/* Pestañas de navegación */}
         <Col xs="12">
           <Nav tabs>
@@ -68,25 +68,57 @@ const Servicios = () => {
               </Row>
             </TabPane>
             <TabPane tabId="2">
-              <Row>
+            <Row>
                 <Col sm="12">
-                  <h4>Servicios de Construcción</h4>
-                  <p>Contamos con servicios especializados para la construcción, con mano de obra calificada y herramientas modernas para llevar a cabo proyectos de construcción de cualquier tamaño.</p>
+                  <h4>Encargado de Ferretería</h4>
+                <ListGroup flush>
+                <ListGroupItem>
+                    Nombre: Demetrio Arce
+                </ListGroupItem>
+                <ListGroupItem>
+                    Correo: DemetrioA@correo.cl
+                </ListGroupItem>
+                <ListGroupItem>
+                    Telefono Ferreteria: 9 1234 5678
+                </ListGroupItem>
+                <ListGroupItem>
+                    Dirección: Diego de Almagro 2589, Calama, Antofagasta
+                </ListGroupItem>
+                <ListGroupItem>
+                    Horario: Lunes a Viernes: 09:30 a 13:30 y 14:30 a 18:30 hrs
+                </ListGroupItem>
+                </ListGroup>
                 </Col>
               </Row>
             </TabPane>
             <TabPane tabId="3">
-              <Row>
+            <Row>
                 <Col sm="12">
-                  <h4>Tienda de Materiales de Construcción</h4>
-                  <p>En nuestra tienda podrás encontrar una gran variedad de materiales de construcción, desde cemento, ladrillos, hasta productos especializados para proyectos a gran escala.</p>
+                  <h4>Encargado Tienda de Materiales de Construcción</h4>
+                <ListGroup flush>
+                <ListGroupItem>
+                    Nombre: Demetrio Arce
+                </ListGroupItem>
+                <ListGroupItem>
+                    Correo: DemetrioA@correo.cl
+                </ListGroupItem>
+                <ListGroupItem>
+                    Telefono Ferreteria: 9 1234 5678
+                </ListGroupItem>
+                <ListGroupItem>
+                    Dirección: Diego de Almagro 2589, Calama, Antofagasta
+                </ListGroupItem>
+                <ListGroupItem>
+                    Horario: Lunes a Viernes: 09:30 a 13:30 y 14:30 a 18:30 hrs
+                </ListGroupItem>
+                </ListGroup>
                 </Col>
               </Row>
             </TabPane>
           </TabContent>
         </Col>
       </Row>
-    </Container>
+    
   );
 };
 

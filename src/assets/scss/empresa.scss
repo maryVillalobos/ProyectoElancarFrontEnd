@@ -136,10 +136,9 @@
 }
 
 
-//Servicios
 
 .servicios-modulo {
-  padding: 20px;
+  margin-bottom: 20px;
 
   .nav-tabs {
     border-bottom: 2px solid #eab307; // Borde debajo de las pestañas
@@ -180,5 +179,49 @@
     color: #333;
     font-size: 16px;
     line-height: 1.5;
+  }
+}
+
+.section-title {
+ 
+  margin-bottom: 20px;
+}
+
+
+// Ajustes para pantallas móviles
+@media (max-width: 768px) {
+  .contacto-modulo {
+    padding: 10px; // Reduce el padding para aprovechar mejor el espacio
+  }
+
+  .button-formulario {
+    width: 100%; // Asegura que el botón ocupe todo el ancho disponible
+    margin-top: 10px; // Añade un poco de espacio arriba para separar del formulario
+  }
+
+  .section-row-contacto {
+    display: flex;
+    flex-direction: column; // Alinea verticalmente los elementos
+    align-items: left; // Centra los elementos
+  }
+
+  .iframe-mapa {
+    width: 100%; // Asegura que el iframe ocupe todo el ancho disponible
+    margin-top: 20px; // Añade espacio arriba para separar del título
+  }
+
+  // Ajustar título y servicio
+  .section-title, .servicios-modulo {
+    text-align: left; // Centrar el texto en pantallas pequeñas
+    padding: 10px; // Ajusta el padding para una mejor alineación
+  }
+
+  .nav-link {
+    padding: 5px 10px; // Reduce el padding para caber mejor en pantallas pequeñas
+    font-size: 14px; // Reduce el tamaño del texto si es necesario
+  }
+
+  .tab-content {
+    padding: 10px; // Reduce el padding para una mejor disposición
   }
 }

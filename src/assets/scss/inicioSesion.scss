@@ -1,114 +1,84 @@
-@import './style.scss';
+@import './style.scss'; 
 $theme-colors: (
-  "FONDO": #fbbe23a1 
+  "primary": #eab307
 );
 @import 'bootstrap/scss/bootstrap';
 
-
-
-
-.login-container {
+// Contenedor de fondo general
+.background-container {
+  height: 90vh;
   display: flex;
   justify-content: flex-start; 
-  align-items: center;       
-  height: 100vh;             
+  align-items: center;
   background-image: url('../img/imgInicioSecion.jpg');
   background-size: cover;  
   background-position: center; 
   background-repeat: no-repeat; 
+  position: relative; 
+}
 
-  .login-box {
-    width: 45%;               
-    height: 100%;              
-    padding: 2rem;          
-    box-shadow: none; 
-    align-items: center;        
-    background-color: var(--bs-FONDO) ; 
-    display: flex;  
-    flex-direction: column; 
-    
+// Cuadro amarillo que ocupa toda la altura y el 40% del ancho de la pantalla
+.overlay {
+  width: 40vw; 
+  height: 100vh; 
+  background-color: rgba(234, 179, 7, 0.5);
+  backdrop-filter: blur(5px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; 
+  position: absolute; 
+  left: 0; 
+
+  // Estilo para dispositivos móviles
+  @media (max-width: 768px) {
+    width: 100vw; 
+    height: 100vh; 
   }
 }
 
-.input-group-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;       
-    justify-content: flex-start;   
-    text-align: left;             
-    width: 35rem;
-}
-.forgot-password {
-    text-align: left;      
-    width: 100%;          
-    margin-top: 1rem;    
+// Estilo del cuadro de inicio de sesión
+.login-box {
+  width: 80%; 
+  padding: 2rem;
+  text-align: left; 
+
+  h2 {
+    color: #000; 
+    font-weight: bold;
+    margin-bottom: 1.5rem;
   }
 
-.titulo {
-    text-align: center;
-}
+  .mb-3 {
+    width: 100%; 
+  }
 
-.boton-inicio{
-    border-radius: 100px; 
-    width: 15rem;                 
-    font-size: 1rem;             
-    color: white;
-    transition: background-color 0.3s ease; 
-}
+  .forgot-password-link {
+    color: #000;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    display: block;
 
-
-
-
-
-@media (max-width: 1224px) {
-    .login-box {
-      width: 90%;                   // Aumentar el ancho en pantallas medianas
-    }
-  
-    .input-group-container {
-      max-width: 340px;             // Ajustar el ancho máximo de los inputs en pantallas medianas
+    &:hover {
+      color: lighten(#ffffff, 10%);
+      text-decoration: underline;
     }
   }
-  
-@media (max-width: 768px) {
-    .login-container {
-      justify-content: center;      // Centrar el formulario en pantallas pequeñas (tablets y móviles)
-    }
-    .login-box {
-        width: 100%;                   // El formulario ocupa el 80% de la pantalla en pantallas más pequeñas
-        padding: 1.5rem;
-    }
-    .input-group-container {
-        max-width: 280px;             // Ajustar el ancho máximo de los inputs en pantallas pequeñas
-    }
-    .boton-inicio {
-        width: 100%;                  // El botón ocupa todo el ancho del formulario
-    }
+
+  .button-formulario {
+    background-color: transparent;
+    color: #000000;
+    font-weight: bold;
+    border: 3px solid #000000;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+
+  .button-formulario:hover {
+    background-color: #eab307; // Cambia el color de fondo en hover
+    color: white; // Cambia el color del texto en hover
+    border-color: #eab307; 
+    font-weight: bold;
+  }
 }
-
-@media (max-width: 480px) {
-    .login-container {
-        justify-content: center;      // Mantener centrado el formulario en móviles pequeños
-    }
-  
-    .login-box {
-        width: 100%;                   // En móviles, el formulario ocupa el 90% del ancho de la pantalla
-        padding: 1rem;
-    }
-  
-    .input-group-container {
-        width: 100%;                  // Inputs ocupan todo el ancho del formulario
-        max-width: 280px;
-    }
-  
-    .boton-inicio {
-        width: 100%;                  // Botón ocupa todo el ancho en móviles
-    }
-}
-
-
-
-
-
-
-

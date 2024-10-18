@@ -72,7 +72,7 @@ const Contacto = () => {
         </Col>
 
         {/* Mapa */}
-        <Col xs="12" md="6" className="text-center">
+        <Col xs="12" md="6" className="text-left mt-4 mt-md-0">
           <h2>Tienda Principal</h2>
           <iframe
             className="iframe-mapa"  
@@ -80,23 +80,22 @@ const Contacto = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            width="90%"
+            width="100%"
             height="300px"
           ></iframe>
         </Col>
-
       </Row>
       <hr />
       
-      {/* Sección de Misión */}
+      {/* Sección de Representantes */}
       <Row className="section-row my-4">
-        <Col xs="12" md="12" className="text-left">
-          <h2>Representantes Comerciales</h2>
+        <Col xs="12" className="text-left">
+          <h2 className="section-title">Representantes Comerciales</h2>
           <Servicios />
         </Col>
       </Row>
-      
     </Container>
+
   );
 };
 

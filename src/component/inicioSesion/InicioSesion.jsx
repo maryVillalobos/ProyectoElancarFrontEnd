@@ -6,46 +6,33 @@ import '@styles/inicioSesion.scss';  // Importación del SCSS
 
 const InicioSesion = () => {
   return (
-<>
-  <MyNavbar />
-  
-  <div className="content-container">  {/* Este contenedor ahora empuja el contenido debajo del navbar */}
-    <div className="background-container">
-      <div className="login-container">
-        <div className="login-box">
-          <h1 className='titulo'>INICIO DE SESIÓN</h1>
-          <br />
-          <div className="input-group-container">
-            <h2>CORREO ELECTRÓNICO</h2>
-            <InputGroup className="mb-3">
-              <Input placeholder="Ingrese aquí su correo electrónico" />
-              <InputGroupText>@gmail.com</InputGroupText>
-            </InputGroup>
-          </div>
-          <div className="input-group-container">
-            <h2>CONTRASEÑA</h2>
-            <InputGroup className="mb-3">
-              <Input type="password" placeholder="Ingrese aquí su contraseña" />
-            </InputGroup>
-
-            <div className="forgot-password">
-              <a href="/recuperarContraseña">HE OLVIDADO MI CONTRASEÑA</a>
+    <>
+      <MyNavbar />
+      
+      <div className="content-container">
+        <div className="background-container">
+          <div className="overlay">
+            <div className="login-box">
+              <h2>Iniciar Sesión</h2>
+              <InputGroup className="mb-3">
+                <InputGroupText><i class="bi bi-at"></i></InputGroupText>
+                <Input type="email" placeholder="Correo Electrónico" />
+              </InputGroup>
+              <InputGroup className="mb-3">
+                <InputGroupText><i class="bi bi-lock"></i></InputGroupText>
+                <Input type="password" placeholder="Contraseña" />
+              </InputGroup>
+              <NavLink href="#" className="forgot-password-link">He olvidado mi contraseña</NavLink>
+              <Button color="primary" className="button-formulario w-100 mt-3">Ingresar</Button>
             </div>
           </div>
-          <br /><br />
-          <Button className="boton-inicio" color="dark">
-            <NavLink href="/">Inicio</NavLink>
-          </Button>
         </div>
       </div>
-    </div>
-  </div>
 
-  <Footer />
-</>
-
-
+      <Footer />
+    </>
   );
 };
 
 export default InicioSesion;
+
