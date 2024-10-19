@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, InputGroup, Input, InputGroupText, Button, NavLink } from 'reactstrap';
+import { InputGroup, Input, InputGroupText, Button, NavLink } from 'reactstrap';
 import MyNavbar from '../landingPage/components/MyNavbar';
 import Footer from '../landingPage/components/footer';
 import '@styles/inicioSesion.scss';  // Importación del SCSS

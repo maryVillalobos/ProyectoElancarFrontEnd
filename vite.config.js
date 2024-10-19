@@ -1,4 +1,3 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import * as path from 'path';
@@ -20,7 +19,9 @@ export default defineConfig({
       { find: '@assets', replacement: path.resolve(__dirname, 'src/assets') },
       { find: '@context', replacement: path.resolve(__dirname, 'src/utility/context') },
       { find: '@components', replacement: path.resolve(__dirname, 'src/component') }
-    
     ],
+  },
+  server: {
+    port: 8080, // Cambia este número por el puerto que desees
   }
 });
