@@ -9,9 +9,7 @@ const Catalogo = () => {
     <>
 
       <MyNavbar />
-      <Row className='sidebar'>
         <Sidebar />
-      </Row>
 
       <Row className='productos-catalogo'>
 

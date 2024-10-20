@@ -27,7 +27,7 @@ const Sidebar = () => {
   return (
     <>
       <Row className='sidebar'>
-        <Button color="primary" onClick={toggle1} className='col-3'>
+        <Button color="primary" onClick={toggle1} className='col-2'>
               Categorías
             </Button>
         <div className='col-8'>
