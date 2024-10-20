@@ -40,27 +40,29 @@ const Empresa = () => {
   return (
     <>
       <MyNavbar />
-      <Container fluid className="color-blocks-container titulo-empresa">
-        <h1>Empresa</h1>
+      <Container fluid className="empresa-fondo">
+        <h1 className='titulo-empresa'>Empresa</h1>
       </Container>
 
-      <Row className="container-button justify-content-center">
-        <Col xs="12" md="3" className="container-info">
-          <Button className="informacion-button" onClick={() => setActiveModule('Información')}>Información</Button>
-        </Col>
-        <Col xs="12" md="3" className="container-info">
-          <Button className="informacion-button" onClick={() => setActiveModule('Preguntas')}>Preguntas Frecuentes</Button>
-        </Col>
-        <Col xs="12" md="3" className="container-info">
-          <Button className="informacion-button" onClick={() => setActiveModule('Contacto')}>Contacto</Button>
-        </Col>
-      </Row>
+      <Container fluid className="botones-fondo">
+        <Row className="justify-content-center"> 
+          <Col xs="12" md="3" className="container-info"> 
+            <Button outline  className="informacion-button" onClick={() => setActiveModule('Información')}>Información</Button> 
+          </Col> 
+          <Col xs="12" md="3" className="container-info"> 
+            <Button outline className="informacion-button" onClick={() => setActiveModule('Preguntas')}>Preguntas Frecuentes</Button> 
+          </Col> 
+          <Col xs="12" md="3" className="container-info"> 
+            <Button outline className="informacion-button" onClick={() => setActiveModule('Contacto')}>Contacto</Button> 
+          </Col> 
+        </Row>
+      </Container>
 
       {/* Renderizar el componente del módulo seleccionado */}
-      <Container fluid className="modulo-contenedor">
+      <Container fluid>
         <Row>
           <Col xs="12">
-            <div className="modulo-contenido">
+            <div >
               {renderModule()}
             </div>
           </Col>

@@ -13,12 +13,11 @@ const Servicios = () => {
   return (
     
       <Row className="servicios-modulo">
-        {/* Pestañas de navegación */}
         <Col xs="12">
           <Nav tabs>
             <NavItem>
               <NavLink
-                className={classnames({ active: activeTab === '1' })}
+                className={`nav-link ${activeTab === '1' ? 'active' : ''}`} // Asegurar que se añada la clase active
                 onClick={() => { toggle('1'); }}
               >
                 Ferretería
@@ -26,7 +25,7 @@ const Servicios = () => {
             </NavItem>
             <NavItem>
               <NavLink
-                className={classnames({ active: activeTab === '2' })}
+                className={`nav-link ${activeTab === '2' ? 'active' : ''}`} // Asegurar que se añada la clase active
                 onClick={() => { toggle('2'); }}
               >
                 Servicios de Construcción
@@ -34,19 +33,20 @@ const Servicios = () => {
             </NavItem>
             <NavItem>
               <NavLink
-                className={classnames({ active: activeTab === '3' })}
+                className={`nav-link ${activeTab === '3' ? 'active' : ''}`} // Asegurar que se añada la clase active
                 onClick={() => { toggle('3'); }}
               >
                 Tienda de Materiales de Construcción
               </NavLink>
             </NavItem>
           </Nav>
-          {/* Contenido de las pestañas */}
+
+         
           <TabContent activeTab={activeTab}>
             <TabPane tabId="1">
               <Row>
                 <Col sm="12">
-                  <h4>Encargado de Ferretería</h4>
+                  <h4 className='Nombres-Representantes-Comerciales' >Encargado de Ferretería</h4>
                 <ListGroup flush>
                 <ListGroupItem>
                     Nombre: Demetrio Arce
@@ -70,7 +70,7 @@ const Servicios = () => {
             <TabPane tabId="2">
             <Row>
                 <Col sm="12">
-                  <h4>Encargado de Ferretería</h4>
+                  <h4  className='Nombres-Representantes-Comerciales' >Servicios de Construcción</h4>
                 <ListGroup flush>
                 <ListGroupItem>
                     Nombre: Demetrio Arce
@@ -94,7 +94,7 @@ const Servicios = () => {
             <TabPane tabId="3">
             <Row>
                 <Col sm="12">
-                  <h4>Encargado Tienda de Materiales de Construcción</h4>
+                  <h4  className='Nombres-Representantes-Comerciales'>Encargado Tienda de Materiales de Construcción</h4>
                 <ListGroup flush>
                 <ListGroupItem>
                     Nombre: Demetrio Arce

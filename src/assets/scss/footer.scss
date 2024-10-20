@@ -11,7 +11,6 @@ $theme-colors: (
 
 @import 'bootstrap/scss/bootstrap';
 
-$primary: #eab307;
 
 footer.footer {
   background-color: #2b2b2b;
@@ -38,10 +37,10 @@ footer.footer {
 .h4-footer {
   margin-bottom: 10px;
   font-size: 18px;
-  color: $primary !important;
+  color: var(--bs-primary);
 }
 
-hr {
+.hr-footer {
   border: 1px solid #fff;
   width: 100%;
 }
@@ -64,11 +63,10 @@ footer.footer .list-group-item {
   height: 300px;
 }
 
-// Estilos del footer
 
 .footer-firma {
   text-align: left;
-  margin-top: 100px; // Reducimos el margen superior para pantallas pequeñas
+  margin-top: 100px; 
   font-size: 0.9rem;
   color: var(--bs-secondary) ;
   font-weight: bold;
@@ -77,16 +75,16 @@ footer.footer .list-group-item {
 // Ajustes específicos para pantallas móviles
 @media (max-width: 768px) {
   .footer-container {
-    justify-content: center; // Centramos el contenido en móviles
+    justify-content: center; 
   }
 
   .footer-firma {
-    margin-top: 10px; // Reducimos aún más el margen superior en móviles
-    text-align: center; // Alineamos la firma al centro para móviles
+    margin-top: 10px; 
+    text-align: center; 
   }
 
   .footer-section {
-    margin-top: 20px; // Espaciado adicional entre secciones en móviles
-    text-align: center; // Alineamos el texto al centro en móviles
+    margin-top: 20px; 
+    text-align: center; 
   }
 }

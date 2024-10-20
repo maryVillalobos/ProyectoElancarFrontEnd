@@ -67,7 +67,7 @@ const Contacto = () => {
                 onChange={handleChange}
               />
             </FormGroup>
-            <Button type="submit" className='button-formulario'>Enviar Mensaje</Button>
+            <Button outline type="submit" className='button-formulario'>Enviar Mensaje</Button>
           </Form>
         </Col>
 

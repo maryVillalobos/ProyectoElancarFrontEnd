@@ -303,3 +303,22 @@ body {
   font-weight: normal; /* Ajusta el grosor de la fuente para que sea más ligero */
   font-size: 1rem; /* Ajusta el tamaño según sea necesario */
 }
+
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary); 
+  color: #fff; 
+  box-shadow: none; 
+}
+
+.accordion-button:hover {
+  background-color: (var(--bs-primary)); 
+  color: #fff; 
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+  background-color: var(--bs-primary); 
+  box-shadow: none; 
+  outline: none; 
+}

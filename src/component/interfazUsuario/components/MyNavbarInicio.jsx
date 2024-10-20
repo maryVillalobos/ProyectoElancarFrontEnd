@@ -38,13 +38,17 @@ const MyNavbar = () => {
                 <NavLink tag={Link} to="/ModificarPágina" className="font-weight-bold">Modificar Página</NavLink>
             </NavItem>
             </Nav>
-            <Button
-            outline
-            className={`person-icon ${isOpen ? 'menu-open' : ''}`}
-            href="/"
-            >
-            {isOpen ? 'Cerrar Sesión' : <i className="bi bi-box-arrow-right"></i>}
-            </Button>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <h6 style={{ marginRight: '10px', color: '#000' }}>Eladio V.</h6>
+                    <Button
+                        outline
+                        className={`person-icon ${isOpen ? 'menu-open' : ''}`}
+                        href="/"
+                    >
+                        {isOpen ? 'Cerrar Sesión' : <i className="bi bi-box-arrow-right"></i>}
+                    </Button>
+                </div>
+            
 
         </Collapse>
         </Navbar>
