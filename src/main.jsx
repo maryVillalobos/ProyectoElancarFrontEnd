@@ -14,8 +14,8 @@ import InicioSesion from './component/inicioSesion/InicioSesion'
 import Catalogo from './component/catalogo/catalogo'
 import Interfaz from './component/interfazUsuario/interfazUsuario'
 import Empresa from './component/informacionEmpresa/Empresa';
-
-
+import Estadistica from './component/interfazUsuario/Estadistica/Estadistica'
+import GestionUsuario from './component/interfazUsuario/GestionUsuario/GestionUsuario';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +37,15 @@ const router = createBrowserRouter([
   {
     path: "/empresa/:module?",  // El parámetro 'module' es opcional
     element: <Empresa />
-  }
+  },
+  {
+    path: "/estadística",  // El parámetro 'module' es opcional
+    element: <Estadistica />
+  },
+  {
+    path: "/GestiónDeUsuario",  // El parámetro 'module' es opcional
+    element: <GestionUsuario />
+  },
 ]);
 
 

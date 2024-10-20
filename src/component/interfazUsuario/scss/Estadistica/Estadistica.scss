@@ -1,0 +1,34 @@
+
+
+.estadistica-container {
+  display: flex;
+  justify-content: center; 
+  padding: 1rem; 
+}
+
+.grafico-container {
+  width: 100%;
+  max-width: 800px; 
+  margin-bottom: 1rem; 
+}
+
+.productos-container {
+  width: 100%; 
+  max-width: 800px; 
+}
+
+
+@media (max-width: 1400px) {
+  .estadistica-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .grafico-container {
+    margin-bottom: 1rem;
+  }
+
+  .productos-container {
+    margin-top: 1rem;
+  }
+}
