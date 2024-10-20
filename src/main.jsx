@@ -1,21 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   RouterProvider
-} from "react-router-dom"
+} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@styles/style.scss';
 
 // Componentes 
 import Landing from './component/landingPage/Landing';
-import InicioSesion from './component/inicioSesion/InicioSesion'
-import Catalogo from './component/catalogo/catalogo'
-import Interfaz from './component/interfazUsuario/interfazUsuario'
+import InicioSesion from './component/inicioSesion/InicioSesion';
+import Catalogo from './component/catalogo/catalogo';
+import Interfaz from './component/interfazUsuario/interfazUsuario';
 import Empresa from './component/informacionEmpresa/Empresa';
 import Estadistica from './component/interfazUsuario/Estadistica/Estadistica'
 import GestionUsuario from './component/interfazUsuario/GestionUsuario/GestionUsuario';
+import ProductoDescripcion from './component/landingPage/components/ProductoDescripcion';
+
 
 const router = createBrowserRouter([
   {
@@ -39,13 +41,17 @@ const router = createBrowserRouter([
     element: <Empresa />
   },
   {
-    path: "/estadística",  // El parámetro 'module' es opcional
+    path: "/estadística",
     element: <Estadistica />
   },
   {
-    path: "/GestiónDeUsuario",  // El parámetro 'module' es opcional
+    path: "/GestiónDeUsuario",
     element: <GestionUsuario />
   },
+  {
+    path: "/producto-descripcion",  // Nueva ruta para la descripción del producto
+    element: <ProductoDescripcion />
+  }
 ]);
 
 

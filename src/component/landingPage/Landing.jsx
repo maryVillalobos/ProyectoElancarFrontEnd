@@ -3,6 +3,7 @@ import { Container, Row, Col, Carousel, CarouselItem, CarouselControl, CarouselI
 import '@styles/style.scss';
 import MyNavbar from './components/MyNavbar';
 import Footer from './components/footer'
+import ProductosDestacados from './components/ProductosDestacados';
 import img1 from '@img/carusel1.jpg'; 
 import img2 from '@img/carusel2.jpg';
 import img3 from '@img/carusel3.jpg';
@@ -87,7 +88,7 @@ const Landing = () => {
         <Row className="h-100">
           <Col className="color-block " xs="12" md="12">
             <div className="full-screen-block">
-              <h2>Secondary Block</h2>
+              <ProductosDestacados />
             </div>
           </Col>
 

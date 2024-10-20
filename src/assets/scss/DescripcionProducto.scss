@@ -1,0 +1,57 @@
+@import './style.scss';
+
+// Contenedor principal
+.contenedor-descripcionproducto {
+  padding: 20px 50px; // Padding arriba/abajo: 20px, lados: 50px
+  background-color: rgba(234, 179, 7, 0.3); // Fondo color primary con opacidad para un toque suave de color
+}
+
+@media (max-width: 768px) {
+  .contenedor-descripcionproducto {
+    padding: 10px 20px; // En móviles, reduce el padding
+  }
+}
+
+// Módulo de contenido del producto
+.modulo-contenido-producto {
+  padding: 20px; // Ajusta el padding interno
+  background-color: #ffffff; // Fondo blanco para que el contenido resalte
+  border-radius: 10px; // Bordes redondeados
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra suave para un efecto de profundidad
+}
+
+// Imagen del producto
+.modulo-contenido-producto img {
+  max-width: 80%; // Ajusta el tamaño máximo de la imagen al 80% del contenedor
+  border: 1px solid #d3d3d3; // Borde gris claro
+  border-radius: 10px; // Bordes redondeados
+  padding: 10px; // Espacio interno para separar la imagen del borde
+  background-color: #f9f9f9; // Fondo claro para destacar la imagen
+  margin: 0 auto; // Centra la imagen horizontalmente
+  display: block; // Asegura que la imagen sea tratada como un bloque
+}
+
+// Línea vertical
+.vertical-line {
+  border-left: 1px solid #d3d3d3; /* Línea vertical gris */
+  height: 100%; /* Asegura que ocupe el 100% de la altura de las columnas */
+  margin: 0 20px; /* Espaciado a los lados de la línea */
+}
+
+// Acordeón
+.accordion-item {
+  background-color: rgba(234, 179, 7, 0.1); // Fondo primary con opacidad
+  border-radius: 10px; // Bordes redondeados
+  margin-bottom: 15px; // Espacio entre acordeones
+}
+
+.accordion-header {
+  font-weight: bold;
+  color: #333; // Color de texto oscuro para contraste
+}
+
+.accordion-body {
+  background-color: #ffffff; // Fondo blanco para el contenido del acordeón
+  border-top: 1px solid rgba(0, 0, 0, 0.1); // Borde sutil entre el header y el body
+  padding: 15px;
+}

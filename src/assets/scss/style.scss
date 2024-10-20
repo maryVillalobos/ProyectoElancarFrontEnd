@@ -218,3 +218,88 @@ body {
   background-color: var(--bs-success);
   color: black;
 }
+
+
+//Componente ProductosDestacados
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+}
+
+.custom-card {
+  width: 300px;
+  flex: 0 0 auto; /* Evita que las tarjetas se reduzcan y permite el desplazamiento */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 450px; /* Ajusta la altura total de la tarjeta */
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+}
+
+.custom-card-img {
+  padding: 20px;
+  height: 60%; /* Ajusta la imagen para que ocupe el 60% de la altura de la tarjeta */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  outline: none; /* Elimina el contorno de enfoque */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover,
+.carousel-control-prev:active, .carousel-control-next:active,
+.carousel-control-prev:focus, .carousel-control-next:focus {
+  background: none !important; /* Asegúrate de que no tenga ningún color de fondo */
+  box-shadow: none; /* Elimina cualquier sombra que pueda aparecer */
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+/* Ocultar los botones en pantallas grandes */
+@media (min-width: 768px) {
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
+
+  .cards-wrapper {
+    overflow: visible; /* Quita el scroll en pantallas grandes */
+  }
+}
+
+
+.h5Suntitulo {
+  color: rgba(0, 0, 0, 0.6); /* Color negro con transparencia */
+  font-weight: normal; /* Ajusta el grosor de la fuente para que sea más ligero */
+  font-size: 1rem; /* Ajusta el tamaño según sea necesario */
+}
