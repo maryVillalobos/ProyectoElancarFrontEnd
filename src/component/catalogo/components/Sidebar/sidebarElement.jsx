@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Container,
-  Accordion,
   AccordionBody,
   AccordionHeader,
   AccordionItem,
@@ -15,6 +13,7 @@ const SidebarElement = ({id, Categoria, Subcategorias =[]}) => {
   
   return (
     <>
+    
     <AccordionItem>
           <AccordionHeader targetId={id}>{Categoria}</AccordionHeader>
           
