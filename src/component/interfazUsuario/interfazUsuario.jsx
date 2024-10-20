@@ -1,18 +1,23 @@
-import React from 'react';
-import { Container } from 'reactstrap'; // Importa Container de Reactstrap para estructurar el layout
+import React, { useState } from 'react';
+import { Container, Row, Button, Col } from 'reactstrap';
+import { useParams } from 'react-router-dom'; // Importa Container de Reactstrap para estructurar el layout
+import '@styles/ModificarPagina.scss';
 import MyNavbar from './components/MyNavbarInicio';
-import Catalogo from '../catalogo/catalogo';
 import Footer from '../landingPage/components/footer';
-const Interfaz = () => {
+import Cotizaciones from './cotizaciones/Cotizaciones';
+
+const ModificarPagina = () => {
+ 
   return (
     <>
       <MyNavbar />
-        <Container className="text-center" style={{ paddingTop: '20px' ,color:'red'}}>
-        <h1>Hola, funcionó Interfaz Usuario</h1>
-        </Container>
-      <Footer />
+      <Cotizaciones/>
+      
+      <Container fluid className="p-0">
+        <Footer />
+      </Container>
     </>
   );
 };
 
-export default Interfaz;
+export default ModificarPagina;

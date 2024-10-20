@@ -1,0 +1,85 @@
+@import './style.scss';
+@import './footer.scss';
+
+
+.added-productos{
+    overflow-y: auto;
+    max-height: 30rem;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    padding-bottom: 1px;
+
+}
+
+.available-productos{
+    overflow-y: auto;
+    max-height: 30rem;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    padding-bottom: 1px;
+}
+
+.added-productos .titulo{
+    position: sticky;
+}
+
+.compacted-img{
+    height: 75px;
+    width: 75px;
+}
+.producto-disponible-img{
+    height: 15rem;
+    width: 100%;
+    
+}
+
+.btn-limpiar{
+    margin-bottom: 10px;
+}
+
+.footer{
+    background-color: #2b2b2b;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
+}
+
+.barra-busqueda{
+
+    background: var(--bs-info);
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: solid var(--bs-danger);
+
+}
+.titulo-busqueda{
+    color: var(--bs-danger);
+}
+.titulo-cotizaciones{
+    color: var(--bs-danger);
+}
+
+.searchInput{
+    background-color: var(--bs-info);
+    border: 1px solid var(--bs-primary);
+    border-right: none;
+    height: 2.2rem;
+    width: 75%;
+    padding-top: 1px;
+}
+
+.busqueda{
+    border: #2b2b2b;
+    margin: 0;
+    width: 25%;
+    border-left: none;
+}
