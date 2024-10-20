@@ -85,7 +85,7 @@ const Landing = () => {
 
         {/* Otros Bloques */}
         <Row className="h-100">
-          <Col className="color-block color-block-secondary" xs="12" md="12">
+          <Col className="color-block " xs="12" md="12">
             <div className="full-screen-block">
               <h2>Secondary Block</h2>
             </div>

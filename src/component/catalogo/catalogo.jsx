@@ -7,11 +7,19 @@ import Sidebar from './components/Sidebar/sidebar';
 const Catalogo = () => {
   return (
     <>
-      <MyNavbar/>
-      <Row>
-         <Sidebar/>
-         <ProductosContainer/>
+
+      <MyNavbar />
+      <Row className='sidebar'>
+        <Sidebar />
       </Row>
+
+      <Row className='productos-catalogo'>
+
+        <Container>
+          <ProductosContainer />
+        </Container>
+      </Row>
+
     </>
   );
 };

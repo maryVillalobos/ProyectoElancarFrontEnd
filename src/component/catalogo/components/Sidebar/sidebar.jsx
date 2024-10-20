@@ -1,17 +1,16 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import {
-  Container,
+  Button,
+  Offcanvas,
+  OffcanvasHeader,
+  OffcanvasBody,
   Accordion,
-  AccordionBody,
-  AccordionHeader,
-  AccordionItem,
+  Row,
+  Navbar
 } from 'reactstrap';
 import SidebarElement from './sidebarElement';
 import '@styles/sidebar.scss';
-
-
-
-
+import logo from '@img/logonavbar.png'
 
 
 const Sidebar = () => {
@@ -21,37 +20,45 @@ const Sidebar = () => {
       setOpen();
     } else {
       setOpen(id);}}
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle1 = () => setIsOpen(!isOpen);
+
   return (
     <>
-    <Accordion open={open} toggle={toggle} className='col-3 sidebar'>
-      <SidebarElement id= {1}Categoria={"Herramientas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={2} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={3} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={4} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={5} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={6} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={7} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={8} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={9} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={10} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-      <SidebarElement id={11} Categoria={"Cerámicas"}
-      Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
-    
-    </Accordion>
+      <Row className='sidebar'>
+        <Button color="primary" onClick={toggle1} className='col-3'>
+              Categorías
+            </Button>
+        <div className='col-8'>
+              <h1>Catálogo Elancar</h1>
+            </div>
+          
+          </Row>
 
 
+          
 
-    
+        
+        <Offcanvas isOpen={isOpen} toggle={toggle1} scrollable>
+          <OffcanvasHeader toggle={toggle1}>
+          <img
+            src={logo}
+            alt="Logo de Elancar"
+            style={{ width: '50px', height: '65px', marginRight: '5px' }}
+          /> Categorías Elancar
+          
+          </OffcanvasHeader>
+          <OffcanvasBody>
+              <Accordion flush open={open} toggle={toggle}>
+              <SidebarElement id={1} Categoria={"Herramientas"} Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
+              <SidebarElement id={2} Categoria={"Pinturas"} Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
+              <SidebarElement id={3} Categoria={"Servicios"} Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
+              <SidebarElement id={4} Categoria={"Tapizados"} Subcategorias={["Subcategoría1","Subcategoría2", "Subcategoría3"]}/>
+
+              </Accordion>
+          </OffcanvasBody>
+        </Offcanvas>
     </>
   );
 };
