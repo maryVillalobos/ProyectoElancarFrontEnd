@@ -8,15 +8,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@styles/style.scss';
 
-// Componentes 
+// Componentes Landing Page
 import Landing from './component/landingPage/Landing';
 import InicioSesion from './component/inicioSesion/InicioSesion';
 import Catalogo from './component/catalogo/catalogo';
 import Interfaz from './component/interfazUsuario/interfazUsuario';
 import Empresa from './component/informacionEmpresa/Empresa';
+// Componentes Interfaz de usuario Elancar
 import Estadistica from './component/interfazUsuario/Estadistica/Estadistica'
 import GestionUsuario from './component/interfazUsuario/GestionUsuario/GestionUsuario';
 import ProductoDescripcion from './component/landingPage/components/ProductoDescripcion';
+import ModificarPagina from './component/interfazUsuario/ModificarPagina/ModificarPagina';
 
 
 const router = createBrowserRouter([
@@ -49,8 +51,12 @@ const router = createBrowserRouter([
     element: <GestionUsuario />
   },
   {
-    path: "/producto-descripcion",  // Nueva ruta para la descripción del producto
+    path: "/productoDescripcion",  
     element: <ProductoDescripcion />
+  },
+  {
+    path: "/modificarPagina",  // Nueva ruta para la descripción del producto
+    element: <ModificarPagina />
   }
 ]);
 

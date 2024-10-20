@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Button, Col } from 'reactstrap';
-import { useParams } from 'react-router-dom';  // Importa useParams
+import { useParams } from 'react-router-dom';  
 import MyNavbar from '../landingPage/components/MyNavbar';
 import Footer from '../landingPage/components/footer'
 import '@styles/empresa.scss';

@@ -28,7 +28,7 @@ const ProductosDestacados = () => {
           <div className="cards-wrapper" ref={scrollRef}>
             
              {/* Card 1*/}
-             <Link to="/producto-descripcion">
+             <Link to="/productoDescripcion">
               <Card className="custom-card">
                 <img alt="Sample" src={Herramienta1} className="custom-card-img" />
                 <CardBody>

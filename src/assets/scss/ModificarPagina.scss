@@ -1,0 +1,57 @@
+
+
+.Titulo-gestion-fondo {
+    color: var(--bs-info);
+    background-color: var(--bs-dark);
+    padding-top: 0.5%;   
+    padding-bottom: 0.5%;  
+    width: 100%;  
+    max-width: 100vw; 
+    margin: 0 auto;
+  }
+//Titulo EMPRESA
+.titulo-gestion {
+  padding-left: 30px; 
+  margin: 0; 
+  text-align: left; 
+  color: var(--bs-info); 
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Personalizacion de los botones
+//Personalizacion de los botones
+.botones-fondo {
+  display: flex; // Asegura que los elementos se alineen correctamente
+  justify-content: center; // Centra los botones en el contenedor
+  flex-wrap: wrap; // Permite que los botones se envuelvan si no caben en una fila
+  padding: 10px; // Añade espacio alrededor del contenedor para separar los botones de los bordes
+
+  .container-gestion {
+    display: flex; // Asegura que los botones se alineen correctamente
+    justify-content: center;
+    margin-bottom: 10px; // Espacio vertical entre botones
+  }
+
+  .gestion-button {
+    background-color: transparent;
+    color: #000000;
+    border: 3px solid #000000;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    padding: 10px 0px; 
+    border-radius: 5px;
+    width: 300px; // Ajusta el ancho del botón para que se alineen bien
+    margin: 10px; // Espacio entre los botones
+  
+    &:hover {
+      background-color: var(--bs-secondary); 
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+  
+    &:active {
+      background-color: var(--bs-secondary); 
+      color: #ffffff; 
+      border-color: #ffffff;
+    }
+  }
+}

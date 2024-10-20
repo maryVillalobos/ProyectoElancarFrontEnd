@@ -35,7 +35,7 @@ const MyNavbar = () => {
                 <NavLink tag={Link} to="/GestiónDeUsuario" className="font-weight-bold">Gestión de Usuario</NavLink>
             </NavItem>
             <NavItem>
-                <NavLink tag={Link} to="/ModificarPágina" className="font-weight-bold">Modificar Página</NavLink>
+                <NavLink tag={Link} to="/ModificarPagina" className="font-weight-bold">Modificar Página</NavLink>
             </NavItem>
             </Nav>
             <div style={{ display: 'flex', alignItems: 'center' }}>
