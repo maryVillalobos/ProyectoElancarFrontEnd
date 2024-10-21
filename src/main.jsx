@@ -12,7 +12,6 @@ import '@styles/style.scss';
 import Landing from './component/landingPage/Landing';
 import InicioSesion from './component/inicioSesion/InicioSesion';
 import Catalogo from './component/catalogo/catalogo';
-import Interfaz from './component/interfazUsuario/interfazUsuario';
 import Empresa from './component/informacionEmpresa/Empresa';
 // Componentes Interfaz de usuario Elancar
 import Estadistica from './component/interfazUsuario/Estadistica/Estadistica'
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
   {
     path: "/catalogo",
     element: <Catalogo />
-  },
-  {
-    path: "/interfazUsuario",
-    element: <Interfaz />
   },
   {
     path: "/empresa/:module?",  // El parámetro 'module' es opcional
