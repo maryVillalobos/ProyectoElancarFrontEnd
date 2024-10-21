@@ -6,7 +6,7 @@ import MyNavbar from './components/MyNavbarInicio';
 import Footer from '../landingPage/components/footer';
 import Cotizaciones from './cotizaciones/Cotizaciones';
 
-const ModificarPagina = () => {
+const InterfazCotizaciones = () => {
  
   return (
     <>
@@ -20,4 +20,4 @@ const ModificarPagina = () => {
   );
 };
 
-export default ModificarPagina;
+export default InterfazCotizaciones;

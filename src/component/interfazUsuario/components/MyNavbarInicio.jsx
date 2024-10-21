@@ -28,7 +28,7 @@ const MyNavbar = () => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="navbar-nav" navbar>
                     <NavItem>
-                        <NavLink tag={Link} to="/interfazUsuario" className="font-weight-bold">Cotización</NavLink>
+                        <NavLink tag={Link} to="/cotizacion" className="font-weight-bold">Cotización</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink tag={Link} to="/estadística" className="font-weight-bold">Estadísticas</NavLink>

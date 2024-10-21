@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom'; // Importa Container de Reactstrap
 import '@styles/cotizaciones.scss';
 import CatalogoCotizacion from './components/catalogoCotizacion';
 import HistorialCotizacion from './components/historialCotizacion';
-
+import MyNavbar from '../components/MyNavbarInicio';
+import Footer from '../../landingPage/components/footer';
 
 const Cotizaciones = () => {
   const [activeModule, setActiveModule] = useState('LandingPage'); // Define el estado para el módulo activo
@@ -39,6 +40,7 @@ const Cotizaciones = () => {
         </Row>
       </Container>
 
+
       {/* Renderizar el componente del módulo seleccionado */}
       <Container fluid>
         <Row>
@@ -49,7 +51,6 @@ const Cotizaciones = () => {
           </Col>
         </Row>
       </Container>
-     
     </>
   );
 };

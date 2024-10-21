@@ -18,6 +18,7 @@ import Estadistica from './component/interfazUsuario/Estadistica/Estadistica'
 import GestionUsuario from './component/interfazUsuario/GestionUsuario/GestionUsuario';
 import ProductoDescripcion from './component/landingPage/components/ProductoDescripcion';
 import ModificarPagina from './component/interfazUsuario/ModificarPagina/ModificarPagina';
+import InterfazCotizaciones from './component/interfazUsuario/interfazUsuario';
 
 
 const router = createBrowserRouter([
@@ -52,7 +53,12 @@ const router = createBrowserRouter([
   {
     path: "/modificarPagina",  // Nueva ruta para la descripción del producto
     element: <ModificarPagina />
-  }
+  },
+  {
+    path: "/cotizacion",  // Nueva ruta para la descripción del producto
+    element: <InterfazCotizaciones />
+  },
+  
 ]);
 
 
