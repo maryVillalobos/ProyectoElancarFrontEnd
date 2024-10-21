@@ -39,7 +39,7 @@ const AddedCotizacion = () => {
 
         </Accordion>
 
-        <div className='footer'>
+        <div className='footer-cotizaciones'>
           Generar cotización <i class="bi bi-caret-right"></i>
         </div>
 
