@@ -20,15 +20,7 @@ body {
 
 
 // Asegurar que los bloques ocupen toda la pantalla
-.full-screen-block {
-  height: 100vh; // Cada bloque ocupa el 100% de la altura de la pantalla
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
+
 
 
 .container-fluid {
@@ -115,6 +107,42 @@ body {
     }
   }
 }
+
+.person-icon-usuario{
+  background-color: transparent;
+    color: #eab307;
+    border-radius: 10%;
+    border: 2px solid #eab307;
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    // Ajuste cuando el menú está abierto (en móviles)
+    &.menu-open {
+      background-color: transparent;
+      border: none;
+      font-size: 16px; // Tamaño más pequeño para texto
+      width: auto;
+      height: auto;
+      color: #000; // Cambia el color del texto
+
+      &:hover {
+        background-color: transparent; // Sin fondo en hover
+        color: #eab307; // Cambia el color del texto en hover
+      }
+    }
+}
+
+
+
 
 //Carusel
 .full-screen-block {

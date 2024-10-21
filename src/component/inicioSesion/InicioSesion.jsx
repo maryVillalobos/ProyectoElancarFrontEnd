@@ -23,7 +23,7 @@ const InicioSesion = () => {
                 <Input type="password" placeholder="Contraseña" />
               </InputGroup>
               <NavLink href="#" className="forgot-password-link">He olvidado mi contraseña</NavLink>
-              <Button color="primary" href="/interfazUsuario" className="button-formulario w-100 mt-3">Ingresar</Button>
+              <Button color="primary" href="/estadística" className="button-formulario w-100 mt-3">Ingresar</Button>
             </div>
           </div>
         </div>
