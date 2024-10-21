@@ -1,0 +1,44 @@
+.select-button {
+    background-color: transparent;
+    color: var(--bs-primary);
+    border: 3px solid var(--bs-primary);
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+  
+    &:hover {
+      background-color: var(--bs-primary);
+    }
+  }
+  
+  .search-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+    gap: 10px; /* Añade espacio entre los elementos */
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .search-container {
+      flex-direction: column; /* En móviles, coloca los elementos en una columna */
+      align-items: stretch; /* Asegura que ocupen todo el ancho disponible */
+    }
+  
+    .search-container input,
+    .search-container select,
+    .search-container button {
+      width: 100%; /* Los elementos ocupan el 100% del ancho en pantallas pequeñas */
+    }
+  }
+  
+  .table {
+    margin-top: 20px; /* Añade espacio entre la búsqueda y la tabla */
+  }
+  
+  .table th, .table td {
+    text-align: center; /* Centra el contenido de las celdas */
+  }
+

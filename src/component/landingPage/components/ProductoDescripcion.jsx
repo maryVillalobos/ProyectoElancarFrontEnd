@@ -74,6 +74,14 @@ const ProductoDescripcion = () => {
           </Col>
         </Row>
         <hr />
+        <Row className="p-0 mt-4">
+          <Col className="text-center mb-5">
+            <div className="text-center my-2"> {/* Cambié my-5 por my-2 */}
+              <h3>Productos Similars</h3>
+              
+            </div>
+          </Col>
+        </Row>
         <ProductosDestacados />
       </Container>
 

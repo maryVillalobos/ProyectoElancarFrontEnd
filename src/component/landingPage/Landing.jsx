@@ -85,9 +85,18 @@ const Landing = () => {
         </Row>
 
         {/* Otros Bloques */}
+        <Row className="p-0 mt-4">
+          <Col className="text-center">
+            <div className="text-center my-2"> {/* Cambié my-5 por my-2 */}
+              <h3>Productos Recomendados</h3>
+              <h5 className="h5Suntitulo">Productos exclusivos seleccionados para ti</h5>
+            </div>
+          </Col>
+        </Row>
+
         <Row className="h-100">
           <Col className="color-block " xs="12" md="12">
-            <div className="full-screen-block">
+            <div className="full-screen-block p-0 mt-0">
               <ProductosDestacados />
             </div>
           </Col>

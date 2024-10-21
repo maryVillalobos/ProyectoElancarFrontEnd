@@ -17,10 +17,8 @@ const ProductosDestacados = () => {
 
   return (
     <>
-      <Container className="text-center my-5">
-        <h3>Productos Recomendados</h3>
-        <h5 className='h5Suntitulo'>Productos exclusivos seleccionados para ti</h5>
-        <div className="carousel-container mt-4">
+      <Container className="text-center ">
+        <div className="carousel-container ">
           {/* Botón para desplazar a la izquierda */}
           <Button onClick={scrollLeft} className="carousel-control-prev">❮</Button>
           

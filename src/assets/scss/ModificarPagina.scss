@@ -16,19 +16,17 @@
   text-align: left; 
   color: var(--bs-info); 
 }
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Personalizacion de los botones
 //Personalizacion de los botones
 .botones-fondo {
-  display: flex; // Asegura que los elementos se alineen correctamente
-  justify-content: center; // Centra los botones en el contenedor
-  flex-wrap: wrap; // Permite que los botones se envuelvan si no caben en una fila
-  padding: 10px; // Añade espacio alrededor del contenedor para separar los botones de los bordes
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  padding: 10px; 
 
   .container-gestion {
-    display: flex; // Asegura que los botones se alineen correctamente
+    display: flex; 
     justify-content: center;
-    margin-bottom: 10px; // Espacio vertical entre botones
+    margin-bottom: 10px; 
   }
 
   .gestion-button {
@@ -39,8 +37,8 @@
     transition: background-color 0.3s ease, color 0.3s ease; 
     padding: 10px 0px; 
     border-radius: 5px;
-    width: 300px; // Ajusta el ancho del botón para que se alineen bien
-    margin: 10px; // Espacio entre los botones
+    width: 300px; 
+    margin: 10px; 
   
     &:hover {
       background-color: var(--bs-secondary); 
@@ -55,3 +53,144 @@
     }
   }
 }
+
+//Modificar Landing Page //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.H2-Titulo-ModificarLandigpage {
+  margin-bottom: 20px;
+   /* Eliminar márgenes adicionales */
+}
+.H5-Titulo-ModificarLandigpage{
+  color:var(--bs-primary) !important;
+}
+
+
+.boton-color{
+  background-color: transparent; // Mantén el fondo transparente
+  color:var(--bs-primary); // Color del texto negro
+  border: 3px solid var(--bs-primary); // Borde negro
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 200px;
+ 
+}
+
+.titulo{
+  display: flex;
+  align-items: center; /* Alinear verticalmente */
+  justify-content: space-between; /* Separar el título y el botón */
+  gap: 15px; /* Espacio entre el título y el botón */
+}
+
+.boton-recomendacion {
+  margin-left: auto; /* Empujar el botón hacia la derecha */
+  padding: 8px 16px; /* Ajusta el espacio del botón */
+  font-weight: bold; /* Estilo adicional para destacar */
+}
+
+.boton-color {
+  background-color: transparent;
+  color: var(--bs-primary);
+  border: 3px solid var(--bs-primary);
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.HR-ModificarLandigpage {
+  border: 0; /* Eliminar el borde por defecto */
+  height: 4px; /* Ajusta el grosor de la línea */
+  background-color: var(--bs-warning); /* Cambia el color a un amarillo más marcado (o cualquier otro color que prefieras) */
+  margin: 20px 0; /* Ajusta el margen para darle espacio alrededor */
+}
+
+
+// Modificar contacto
+
+.titulo-con-boton {
+  display: flex;
+  align-items: center;
+  gap: 15px; // Espacio entre el título y el input select
+  justify-content: space-between; // Asegura que los elementos se distribuyan
+  width: 100%;
+
+  h3 {
+    flex: 2; // Hace que el título ocupe más espacio
+  }
+
+  .select-category {
+    flex: 1; // El selector ocupará menos espacio que el título
+    padding: 8px; // Ajustar el padding para que sea más consistente
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column; // Colocar uno debajo del otro en pantallas más pequeñas
+    align-items: flex-start;
+
+    .select-category {
+      margin-bottom: 10px; // Añadir margen inferior en pantallas pequeñas
+    }
+  }
+}
+
+.botones-accion {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px; /* Ajusta el espacio entre los botones */
+  flex-wrap: wrap; /* Permite que los botones se acomoden bien en pantallas pequeñas */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.select-button {
+  background-color: transparent;
+  color: var(--bs-primary);
+  border: 3px solid var(--bs-primary);
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: var(--bs-primary);
+  }
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+  gap: 10px; /* Añade espacio entre los elementos */
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* En móviles, coloca los elementos en una columna */
+    align-items: stretch; /* Asegura que ocupen todo el ancho disponible */
+  }
+
+  .search-container input,
+  .search-container select,
+  .search-container button {
+    width: 100%; /* Los elementos ocupan el 100% del ancho en pantallas pequeñas */
+  }
+}
+
+.table {
+  margin-top: 20px; /* Añade espacio entre la búsqueda y la tabla */
+}
+
+.table th, .table td {
+  text-align: center; /* Centra el contenido de las celdas */
+}
+
