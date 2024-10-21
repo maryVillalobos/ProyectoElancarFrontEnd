@@ -6,7 +6,7 @@ const ModificarUsuario = ({ isOpen, toggle, modificarUsuario, usuario }) => {
 
     useEffect(() => {
         if (usuario) {
-            setNuevoUsuario(usuario); // Asigna los datos del usuario seleccionado al estado
+            setNuevoUsuario(usuario); 
         }
     }, [usuario]);
 

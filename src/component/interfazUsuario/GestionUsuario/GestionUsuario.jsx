@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
-import { Container, Table, Button } from 'reactstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Button } from 'reactstrap';
 import MyNavbar from '../components/MyNavbarInicio';
 import AgregarUsuario from '../GestionUsuario/components/AgregarUsuario'; 
 import ModificarUsuario from './components/ModificarUsuario';
+import UsuariosPantallaGrande from './components/PantallaGrande';
+import UsuariosPantallaPequena from './components/PantallaPequeña';
+import { FaPlus} from 'react-icons/fa';
 import '../scss/GestionUsuario/GestionUsuario.scss';
+
 const GestionUsuario = () => {
     const [usuarios, setUsuarios] = useState([
         { id: 1, nombre: 'Juan', apellido: 'Pérez', email: 'juan.perez@example.com', password: 'Contraseña123' },
@@ -16,6 +20,13 @@ const GestionUsuario = () => {
     const [modalAgregar, setModalAgregar] = useState(false);
     const [modalModificar, setModalModificar] = useState(false);
     const [usuarioModificar, setUsuarioModificar] = useState(null);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsSmallScreen(window.innerWidth < 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const toggleAgregar = () => setModalAgregar(!modalAgregar);
     const toggleModificar = () => setModalModificar(!modalModificar);
@@ -32,48 +43,37 @@ const GestionUsuario = () => {
     return (
         <>
             <MyNavbar />
-            <Container className="text-center" >
-                <h1>Gestión de Usuarios</h1>
+            <Container fluid className="empresa-fondo">
+            <h1 className='titulo-empresa'>Gestión de Usuario</h1>
+            </Container>
+            <Container >
+                <br />
+                <div className="text-center">
+                    <Button color="primary" onClick={toggleAgregar}>
+                        Agregar Usuario
+                    </Button>
+                </div>
+                
+                <AgregarUsuario 
+                    isOpen={modalAgregar} 
+                    toggle={toggleAgregar} 
+                    agregarUsuario={agregarUsuario} 
+                />
                 <hr />
-                <Table striped>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Correo Electrónico</th>
-                            <th>Contraseña</th>
-                            <th>Actualizar</th>
-                            <th>Eliminar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {usuarios.map((usuario) => (
-                            <tr key={usuario.id}>
-                                <td>{usuario.id}</td>
-                                <td>{usuario.nombre}</td>
-                                <td>{usuario.apellido}</td>
-                                <td>{usuario.email}</td>
-                                <td className="contraseña">{usuario.password}</td>
-                                <td>
-                                    <Button color="primary" size="sm" onClick={() => {
-                                        setUsuarioModificar(usuario);
-                                        toggleModificar();
-                                    }}>
-                                        Actualizar
-                                    </Button>
-                                </td>
-                                <td>
-                                    <Button color="danger" size="sm">Eliminar</Button>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </Table>
-                <Button color="primary" onClick={toggleAgregar}>
-                    Agregar Usuario
-                </Button>
-                <AgregarUsuario isOpen={modalAgregar} toggle={toggleAgregar} agregarUsuario={agregarUsuario} className={'content-center'} />
+                {isSmallScreen ? (
+                    <UsuariosPantallaPequena 
+                        usuarios={usuarios} 
+                        setUsuarioModificar={setUsuarioModificar} 
+                        toggleModificar={toggleModificar} 
+                    />
+                ) : (
+                    <UsuariosPantallaGrande 
+                        usuarios={usuarios} 
+                        setUsuarioModificar={setUsuarioModificar} 
+                        toggleModificar={toggleModificar} 
+                    />
+                )}
+                
                 <ModificarUsuario 
                     isOpen={modalModificar} 
                     toggle={toggleModificar} 

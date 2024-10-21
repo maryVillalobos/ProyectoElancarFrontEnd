@@ -1,34 +1,76 @@
-
-
 .estadistica-container {
-  display: flex;
-  justify-content: center; 
+  display: flex; 
   padding: 1rem; 
+  align-items: flex-start; 
 }
 
 .grafico-container {
-  width: 100%;
+  width: 50%; 
   max-width: 800px; 
-  margin-bottom: 1rem; 
+  margin-right: 1rem; 
 }
 
-.productos-container {
-  width: 100%; 
-  max-width: 800px; 
+.tablas-container {
+  width: 50%; 
+
+  flex-direction: column; 
 }
 
 
-@media (max-width: 1400px) {
+.periodo-selector {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 20px; 
+
+  h4 {
+    margin-right: 10px; 
+  }
+
+  select {
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
   .estadistica-container {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .grafico-container {
-    margin-bottom: 1rem;
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 1rem; 
   }
 
-  .productos-container {
-    margin-top: 1rem;
+  .tablas-container {
+    width: 100%;
   }
 }
+
+.periodo-selector {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 20px; 
+
+  h4 {
+    margin-right: 10px; 
+  }
+
+  select {
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+  }
+}
+
+
